@@ -12,15 +12,15 @@ public class LoginTests extends BaseTest {
 
     @Test(description = "Check if user login with correct credentials", priority = 1, groups = "Smoke")
     public void loginTest() {
-        login("demo@class.com", "te$t$tudent");
+        login("vasile.tulbu@testpro.io", "ZgPSBpAE");
         WebElement avatar = driver.findElement(By.cssSelector("#userBadge img"));
-        Assert.assertFalse(avatar.isDisplayed()); // true
+        Assert.assertTrue(avatar.isDisplayed()); // true
     }
 
     @Test(groups = "Regression")
     public void loginWithEmptyCredentials() {
         WebElement logo = driver.findElement(By.cssSelector(".logo"));
-        login("demo@class.com", "");
+        login("vasile.tulbu@testpro.io", "");
         Assert.assertTrue(logo.isDisplayed());
     }
 }

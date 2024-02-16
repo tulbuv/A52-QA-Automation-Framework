@@ -12,13 +12,6 @@ public class HMW17 extends BaseTest {
 
     @Test
     public void addSongToPlaylist(){
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("--remote-allow-origins=*");
-
-        WebDriver driver = new ChromeDriver(options);
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        String url = "https://qa.koel.app/";
-        driver.get(url);
         WebElement emailInput = driver.findElement(By.cssSelector("[type='email']"));
         WebElement passwordInput = driver.findElement(By.cssSelector("[type='password']"));
         WebElement loginButton = driver.findElement(By.cssSelector("[type='submit']"));
@@ -39,8 +32,6 @@ public class HMW17 extends BaseTest {
 
        // WebElement favoriteLink= driver.findElement(By.xpath("//ul/li[@class='favorites']"));
         //favoriteLink.click();
-
-        driver.quit();
 
 
       //  WebElement createNewPlayList= driver.findElement(By.cssSelector("[title='Create a new playlist']"));
