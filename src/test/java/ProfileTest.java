@@ -10,11 +10,11 @@ public class ProfileTest extends BaseTest {
     @Test(groups = "Smoke")
     public void changeProfileNameTest() throws InterruptedException {
         String newName = UUID.randomUUID().toString();
-        login("demo@class.com", "te$t$tudent");
+        login("vasile.tulbu@testpro.io", "ZgPSBpAE");
         WebElement avatar = driver.findElement(By.cssSelector("#userBadge img"));
         avatar.click();
         WebElement currentPasswordField = driver.findElement(By.cssSelector("#inputProfileCurrentPassword"));
-        currentPasswordField.sendKeys("te$t$tudent");
+        currentPasswordField.sendKeys("ZgPSBpAE");
         WebElement nameInput = driver.findElement(By.cssSelector("#inputProfileName"));
         nameInput.clear();
         nameInput.sendKeys(newName);
