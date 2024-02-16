@@ -9,6 +9,7 @@
             <class name="BaseTest"/>
             <class name="HMW17"/>
             <class name="RegistrationNavigationTest"/>
+            <class name="ProfileTest"/>
 
         </classes>
     </test>
