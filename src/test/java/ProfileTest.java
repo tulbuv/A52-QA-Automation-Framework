@@ -1,5 +1,6 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -20,7 +21,7 @@ public class ProfileTest extends BaseTest {
         nameInput.sendKeys(newName);
         WebElement saveButton = driver.findElement(By.cssSelector(".btn-submit"));
         saveButton.click();
-        Thread.sleep(3000);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#userBadge span[class=name]")));
         WebElement userNameLabel = driver.findElement(By.cssSelector("#userBadge span[class=name]"));
         Assert.assertEquals(newName, userNameLabel.getText());
     }

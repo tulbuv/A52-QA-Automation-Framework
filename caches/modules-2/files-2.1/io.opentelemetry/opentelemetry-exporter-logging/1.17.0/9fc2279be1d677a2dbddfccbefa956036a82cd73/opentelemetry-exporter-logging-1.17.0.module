@@ -1,0 +1,146 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.opentelemetry",
+    "module": "opentelemetry-exporter-logging",
+    "version": "1.17.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.5"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "io.opentelemetry",
+          "module": "opentelemetry-sdk",
+          "version": {
+            "requires": "1.17.0"
+          }
+        },
+        {
+          "group": "io.opentelemetry",
+          "module": "opentelemetry-sdk-metrics",
+          "version": {
+            "requires": "1.17.0"
+          }
+        },
+        {
+          "group": "io.opentelemetry",
+          "module": "opentelemetry-sdk-logs",
+          "version": {
+            "requires": "1.17.0-alpha"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "opentelemetry-exporter-logging-1.17.0.jar",
+          "url": "opentelemetry-exporter-logging-1.17.0.jar",
+          "size": 7167,
+          "sha512": "cf30fc5799840341e49e7eaf035e9eafa12668760c1fa2f89d65614fc9425ef6178e8ad95373e6da6d7a10403320d4da917210a0443de44c351218ab4b62da04",
+          "sha256": "442edd61d857e36db8bc769ad0f47f87078167cd0a1e9148765db5d9bc0b4301",
+          "sha1": "d3aa869de2841dd895af6412f9b1d9c9a9348f77",
+          "md5": "6f3e62ede215c3bcdbc55c851cc58a9b"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "io.opentelemetry",
+          "module": "opentelemetry-sdk",
+          "version": {
+            "requires": "1.17.0"
+          }
+        },
+        {
+          "group": "io.opentelemetry",
+          "module": "opentelemetry-sdk-metrics",
+          "version": {
+            "requires": "1.17.0"
+          }
+        },
+        {
+          "group": "io.opentelemetry",
+          "module": "opentelemetry-sdk-logs",
+          "version": {
+            "requires": "1.17.0-alpha"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "opentelemetry-exporter-logging-1.17.0.jar",
+          "url": "opentelemetry-exporter-logging-1.17.0.jar",
+          "size": 7167,
+          "sha512": "cf30fc5799840341e49e7eaf035e9eafa12668760c1fa2f89d65614fc9425ef6178e8ad95373e6da6d7a10403320d4da917210a0443de44c351218ab4b62da04",
+          "sha256": "442edd61d857e36db8bc769ad0f47f87078167cd0a1e9148765db5d9bc0b4301",
+          "sha1": "d3aa869de2841dd895af6412f9b1d9c9a9348f77",
+          "md5": "6f3e62ede215c3bcdbc55c851cc58a9b"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "opentelemetry-exporter-logging-1.17.0-javadoc.jar",
+          "url": "opentelemetry-exporter-logging-1.17.0-javadoc.jar",
+          "size": 127348,
+          "sha512": "6aaa90455d5c62e930133169a15227878acf3c6aea2b83c7237bfa8fc36a2667eca2a1227aa1eaba2ee987979d8268b966192acfe38fbdc8cfbf8c855ce7d0c5",
+          "sha256": "43b2ef44bc6c73a0a6f5c71ecd6a5fe1201c9716d951f6ba2754398955d2429a",
+          "sha1": "230f9a7572e147f5099d85f744a266cc2191877f",
+          "md5": "a7eb932d7cbf7a3f33d4e0a5267db44b"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "opentelemetry-exporter-logging-1.17.0-sources.jar",
+          "url": "opentelemetry-exporter-logging-1.17.0-sources.jar",
+          "size": 4480,
+          "sha512": "3e10d0a84757ee156e045daac42afcdb5538332cbb6ce17fa3f299da2b410d2b7ce9ea35f87a6668fe3c1f6efe4eee9c33214e8f1a6ed3e0f73773a63c06e8c1",
+          "sha256": "a22c28cf2b8d37219d6914d07140e553226f905837b560304069eaf654ec5566",
+          "sha1": "9aeec45520cbcb95827203a8f42e37b0966099f8",
+          "md5": "d72edc3327c15fbd11fff05c527dac28"
+        }
+      ]
+    }
+  ]
+}

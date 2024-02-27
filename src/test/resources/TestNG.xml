@@ -13,6 +13,7 @@
             <class name="ProfileTest"/>
             <class name="PlaySongTest"/>
             <class name="Homework18"/>
+            <class name="Homework19"/>
 
         </classes>
     </test>

@@ -4,12 +4,20 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.testng.annotations.*;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Parameters;
+
 import java.time.Duration;
 
 public class BaseTest {
 
     protected WebDriver driver = null;
+    protected WebDriverWait wait = null;
+
+
 
     @BeforeSuite
     static void setupClass() {
@@ -19,15 +27,19 @@ public class BaseTest {
 
     // Method to set up WebDriver with Chrome options before each test method.
     @BeforeMethod
-    @Parameters("baseUrl")
-    public void setUpDriver(String baseUrl) {
+    @Parameters({"baseUrl"})
+    public void setUpDriver(String url) {
         // Configuring Chrome options for local testing.
-        ChromeOptions optionsChromeLocal = new ChromeOptions();
-        optionsChromeLocal.addArguments("--disable-notifications", "--remote-allow-origins=*", "--incognito", "--start-maximized", "-lang=en");
-        driver = new ChromeDriver(optionsChromeLocal);
+
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--disable-notifications", "--remote-allow-origins=*");
+        driver = new ChromeDriver(options);
         // Configuring implicit wait for the driver and navigating to the specified URL.
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        driver.get(baseUrl);
+        //String url = "https://qa.koel.app/";
+        driver.get(url);
+        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
     }
 
     @AfterMethod
