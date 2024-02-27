@@ -1,5 +1,4 @@
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -19,13 +18,6 @@ public class PlaySongTest extends BaseTest{
         Assert.assertTrue(soundBar.isDisplayed());
 
 
-
-
-       // WebElement allSongsBtn=driver.findElement(By.xpath("//li/a[@href='#!/songs']"));
-      //  allSongsBtn.click();
-      //  WebElement firstSong=driver.findElement(By.xpath("//td[contains(text(), 'M33 Project - Emotional Soundtrack')]"));
-       //Smoke.xml firstSong.click();
-        //firstSong.sendKeys(Keys.ENTER);
 
     }
 }
