@@ -13,6 +13,7 @@ public class ProfileTest extends BaseTest {
         String newName = UUID.randomUUID().toString();
         login("vasile.tulbu@testpro.io", "ZgPSBpAE");
         WebElement avatar = driver.findElement(By.cssSelector("#userBadge img"));
+        Thread.sleep(2000);
         avatar.click();
         WebElement currentPasswordField = driver.findElement(By.cssSelector("#inputProfileCurrentPassword"));
         currentPasswordField.sendKeys("ZgPSBpAE");
@@ -23,6 +24,7 @@ public class ProfileTest extends BaseTest {
         saveButton.click();
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#userBadge span[class=name]")));
         WebElement userNameLabel = driver.findElement(By.cssSelector("#userBadge span[class=name]"));
+        Thread.sleep(2000);
         Assert.assertEquals(newName, userNameLabel.getText());
     }
 }

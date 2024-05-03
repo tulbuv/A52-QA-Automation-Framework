@@ -18,7 +18,7 @@ public class Homework19 extends BaseTest{
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#playlists i[role='button']")));
         WebElement addPlaylistButton = driver.findElement(By.cssSelector("i[data-testid='sidebar-create-playlist-btn']"));
         addPlaylistButton.click();
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("[data-testid='playlist-context-menu-create-simple']")));
+       // wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("[data-testid='playlist-context-menu-create-simple']")));
         WebElement createPlaylistButton = driver.findElement(By.cssSelector("[data-testid='playlist-context-menu-create-simple']"));
         createPlaylistButton.click();
         WebElement playlistNameInput = driver.findElement(By.cssSelector("[name='create-simple-playlist-form']>input"));
